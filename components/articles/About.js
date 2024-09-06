@@ -2,12 +2,24 @@ import React from "react";
 import Image from "next/image";
 const About = () => {
     return (
-        <>
-            <h2 className="major">About</h2>
-            <span className="image main"><Image src="/static/images/pic03.jpg" height={500} width={500} alt="" /></span>
-            <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
-        </>
-    )
+      <>
+        <h2 className="major">About Us</h2>
+        <span className="image main">
+          <img src="/static/images/pic03.jpg" alt="About Us" />
+        </span>
+        <p>
+          Founded with a passion for event planning, The Perfect Event is
+          dedicated to delivering exceptional service and creating memorable
+          experiences. Our team of experienced professionals brings creativity,
+          organization, and enthusiasm to every project.
+        </p>
+        <p>
+          Learn more about our approach, values, and the talented individuals
+          who make up our team. We’re here to make your event planning process
+          as seamless and enjoyable as possible.
+        </p>
+      </>
+    );
 }
 
 export default About;

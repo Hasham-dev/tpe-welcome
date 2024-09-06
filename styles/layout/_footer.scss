@@ -34,4 +34,25 @@
 		.body.is-loading & {
 			opacity: 0;
 		}
+
+		nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Adjust this color as needed */
+    font-size: 0.8rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
 	}

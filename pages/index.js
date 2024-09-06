@@ -41,33 +41,42 @@ const IndexPage = () => {
             setArticle("");
         }, 350);
     };
-    
+
 
     return (
-        <div className={`body ${loading} ${isArticleVisible ? "is-article-visible" : ""}`}>
-            <div>
-                <Head>
-                    <title>Next.js Starter</title>
-                    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i" rel="stylesheet" />
-                </Head>
+      <div
+        className={`body ${loading} ${
+          isArticleVisible ? "is-article-visible" : ""
+        }`}
+      >
+        <div>
+          <Head>
+            <link rel="shortcut icon" href="/static/images/logo.png" />
 
-                <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
+            <title>The Perfect Event</title>
+            <link
+              href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i"
+              rel="stylesheet"
+            />
+          </Head>
 
-                <div id="wrapper">
-                    <Header onOpenArticle={handleOpenArticle} timeout={timeout} />
-                    <Main
-                        isArticleVisible={isArticleVisible}
-                        timeout={timeout}
-                        articleTimeout={articleTimeout}
-                        article={article}
-                        onCloseArticle={handleCloseArticle}
-                    />
-                    <Footer timeout={timeout} />
-                </div>
+          <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
 
-                <div id="bg" />
-            </div>
+          <div id="wrapper">
+            <Header onOpenArticle={handleOpenArticle} timeout={timeout} />
+            <Main
+              isArticleVisible={isArticleVisible}
+              timeout={timeout}
+              articleTimeout={articleTimeout}
+              article={article}
+              onCloseArticle={handleCloseArticle}
+            />
+            <Footer onOpenArticle={handleOpenArticle} timeout={timeout} />
+          </div>
+
+          <div id="bg" />
         </div>
+      </div>
     );
 };
 

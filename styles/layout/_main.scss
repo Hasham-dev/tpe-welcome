@@ -18,6 +18,50 @@
 		z-index: 3;
 		display: none;
 
+			#privacy-policy,
+			#terms-conditions {
+				max-width: 100%;
+				margin: 2rem auto;
+				width: 90%;
+				border-radius: 0.5rem;
+				box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+				
+				h1, h2 {
+					font-size: 1rem;
+					letter-spacing: 0.1rem;
+					margin-bottom: 0.5rem;
+				}
+
+				p {
+					font-size: 0.8rem;
+					line-height: 1.6;
+					margin-bottom: 1rem;
+				}
+
+				ul {
+					margin-left: 2rem;
+					list-style-type: disc;
+					margin-bottom: 1rem;
+					font-size: 0.8rem;
+
+					li {
+						margin-bottom: 0.5rem;
+					}
+				}
+
+				a {
+					color: #007bff;
+					text-decoration: none;
+					font-size: 0.8rem;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+
+		
+
 		article {
 			@include vendor('transform', 'translateY(0.25rem)');
 			@include vendor('transition', (
@@ -108,4 +152,7 @@
 				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
 			}
 		}
+
+		
 	}
+

@@ -3,13 +3,25 @@ import Image from "next/image";
 
 const Work = () => {
     return (
-        <>
-            <h2 className="major">Work</h2>
-            <span className="image main"><Image src="/static/images/pic02.jpg" height={500} width={500} alt="" /></span>
-            <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-        </>
-    )
+      <>
+        <h2 className="major">Our Work</h2>
+        <span className="image main">
+          <img src="/static/images/pic02.jpg" alt="Our Work" />
+        </span>
+        <p>
+          Our portfolio showcases a diverse range of events, from elegant
+          weddings to corporate functions. Each project reflects our commitment
+          to excellence and our ability to tailor our services to meet the
+          unique needs of our clients.
+        </p>
+        <p>
+          Explore our case studies to see how we've helped clients achieve their
+          event goals with creativity and attention to detail. Our{" "}
+          <a href="https://theperfectevent.com/#team">team</a> is here to work
+          with you every step of the way.
+        </p>
+      </>
+    );
 }
 
 export default Work;
