@@ -41,6 +41,7 @@ const IndexPage = () => {
             setArticle("");
         }, 350);
     };
+    
 
     return (
         <div className={`body ${loading} ${isArticleVisible ? "is-article-visible" : ""}`}>
