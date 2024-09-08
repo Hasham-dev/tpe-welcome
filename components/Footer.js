@@ -1,4 +1,5 @@
-import PropTypes from 'prop-types';
+import Link from "next/link";
+import PropTypes from "prop-types";
 
 const Footer = (props) => (
   <footer
@@ -12,23 +13,10 @@ const Footer = (props) => (
     <nav>
       <ul>
         <li>
-          <a
-            href="javascript:;"
-            onClick={() => {
-              props.onOpenArticle("privacy-policy");
-            }}
-          >
-            Privacy Policy
-          </a>
+          <Link href={"/privacy-policy"}>Privacy Policy</Link>
         </li>
         <li>
-          <a
-            onClick={() => {
-              props.onOpenArticle("terms-of-service");
-            }}
-          >
-            Terms of Service
-          </a>
+          <Link href={"/terms-of-service"}>Terms of Service</Link>
         </li>
       </ul>
     </nav>
@@ -36,7 +24,7 @@ const Footer = (props) => (
 );
 
 Footer.propTypes = {
-    timeout: PropTypes.bool
-}
+  timeout: PropTypes.bool,
+};
 
-export default Footer
+export default Footer;
