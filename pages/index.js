@@ -58,6 +58,10 @@ const IndexPage = () => {
               href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,600,600i"
               rel="stylesheet"
             />
+            <meta
+              name="google-site-verification"
+              content="qVbUAyjUAqzdeJg3ZAk6FNPJx8JrqjcJSOrLzAtUY1g"
+            />
           </Head>
 
           <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
